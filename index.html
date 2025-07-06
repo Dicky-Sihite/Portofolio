@@ -193,10 +193,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+        <section id="contact" class="section contact-section">
         <h2>Contact</h2>
-        <p class="contact-description">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
-        <form class="contact-form">
+        <p class="contact-description">
+            Feel free to contact me by submitting the form below. I will get back to you as soon as possible.
+        </p>
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/mzzgqoge"
+            method="POST"
+        >
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
 
@@ -206,9 +212,9 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">Send</button>
         </form>
-    </section>
+        </section>
 
     <!-- Footer -->
     <footer>
