@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Dicky Sihite - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="left">
+            <h1>Hi, I'm<br><span>Dicky Sihite</span></h1>
+            <div class="subtitle">
+                Informatics Management | Web & Mobile App Developer | UI/UX Designer
+            </div>
+        </div>
+        <div class="right">
+            <img src="img/profile.png" alt="Profile" />
+            <a href="#projects" class="btn-small">View My Work</a>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Informatics Management student at Universitas Negeri Surabaya with a strong interest in mobile and web application development. Skilled in UI/UX design and passionate about problem-solving as a programmer. Always eager to learn new things and grow in the tech industry.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section"> 
+        <h2 class="section-title">Hard Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Web Development: <span>HTML, CSS, JavaScript, Laravel (PHP)</span></div>
+            <div class="skill-card">Mobile Development: <span>Flutter & Dart</span></div>
+            <div class="skill-card">Database Management: <span>MySQL, Firebase Realtime Database</span></div>
+            <div class="skill-card">RESTful API Integration</div>
+            <div class="skill-card">UI/UX Design: <span>Figma, Wireframing, Prototyping</span></div>
+            <div class="skill-card">Version Control: <span>Git & GitHub</span></div>
+            <div class="skill-card">Testing & Debugging: <span>Postman, Flutter DevTools</span></div>
+        </div>
+
+        <h2 class="section-title">Soft Skills</h2>
+        <ul class="soft-skills-list">
+            <li>Problem Solving</li>
+            <li>UI/UX Design</li>
+            <li>Time Management</li>
+            <li>Team Collaboration</li>
+            <li>Technical Communication</li>
+            <li>Adaptability to New Technologies</li>
+        </ul>
+    </section>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://www.linkedin.com/in/dickysihite/" target="_blank" class="social-icon">
+            <img src="img/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Dicky-Sihite" target="_blank" class="social-icon">
+            <img src="img/github.svg" alt="GitHub">
+        </a>
+        <a href="http://wa.me/6285275005399" target="_blank" class="social-icon">
+            <img src="img/whatsapp.svg" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/dicky_sihite.02/" target="_blank" class="social-icon">
+            <img src="img/instagram.svg" alt="Instagram">
+        </a>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="scroll-controls">
+                <button class="scroll-btn scroll-btn-left" onclick="scrollProjects(-1)">&#10094;</button>
+                <div class="projects-scroll" id="projectScroll">
+                    <!-- Project Cards -->
+                    <div class="project-card" data-project-id="ari">
+                        <h3>ARI</h3>
+                        <img src="img/project-weather.png" alt="Weather App ARI" class="project-img">
+                        <p>ARI is a mobile-based weather app built with Flutter, integrating OpenWeatherMap API to provide accurate global weather data.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="project-card" data-project-id="JendelaInformasi">
+                        <h3>Jendela Informasi</h3>
+                        <img src="img/project-jendela.png" alt="Jendela Informasi" class="project-img">
+                        <p>News website offering up-to-date coverage and insights from multiple sectors including tech, education, and lifestyle.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="project-card" data-project-id="talenta">
+                        <h3>TALENTA</h3>
+                        <img src="img/project-SIM.png" alt="TALENTA" class="project-img">
+                        <p>Website platform to showcase and manage student talents in music, film, design, and other creative fields.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="project-card" data-project-id="itemrift">
+                        <h3>Item-Rift</h3>
+                        <img src="img/project-Itemrift.png" alt="Item-Rift" class="project-img">
+                        <p>A marketplace platform enabling students to buy and sell second-hand items within campus communities.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="project-card" data-project-id="tripwase">
+                        <h3>TripWase</h3>
+                        <img src="img/project-TripWase.png" alt="TripWase" class="project-img">
+                        <p>Mobile application designed to simplify travel planning by accurately calculating trip expenses.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="project-card" data-project-id="audrica">
+                        <h3>Audrica</h3>
+                        <img src="img/project-Audrica.png" alt="Audrica" class="project-img">
+                        <p>A music player mobile app focused on beautiful UI/UX design, crafted in Figma for seamless listening experience.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="project-card" data-project-id="readify">
+                        <h3>Readify</h3>
+                        <img src="img/project-Readify.png" alt="Readify" class="project-img">
+                        <p>A UI/UX-focused eBook app designed for better digital reading, supporting smooth navigation and clean interface.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
+                </div>
+                <button class="scroll-btn right" onclick="scrollProjects(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Software -->
+    <section class="section tools-section" id="tools">
+        <h2>Tools & Software</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <img src="assets/icons/vscode.png" alt="VSCode" />
+                <span>VSCode</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/android-studio.png" alt="Android Studio" />
+                <span>Android Studio</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/figma.png" alt="Figma" />
+                <span>Figma</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/github.png" alt="GitHub" />
+                <span>Git & GitHub</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/postman.png" alt="Postman" />
+                <span>Postman</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/xampp.png" alt="XAMPP" />
+                <span>XAMPP</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/Composer.png" alt="Composer" />
+                <span>Composer</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/mysql.png" alt="MySQL" />
+                <span>MySQL</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/phpmyadmin.png" alt="phpMyAdmin" />
+                <span>phpMyAdmin</span>
+            </div>
+            <div class="tool-card">
+                <img src="assets/icons/canva.png" alt="Canva" />
+                <span>Canva</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p class="contact-description">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dicky Sihite.</p>
+    </footer>
+
+    <!-- Project Detail Sidebar -->
+    <div id="projectSidebar" class="project-sidebar">
+        <button class="close-sidebar-btn">&times;</button>
+        <h3 id="sidebarProjectTitle"></h3>
+        <div class="sidebar-image-gallery-container">
+            <div class="sidebar-image-gallery" id="sidebarImageGallery"></div>
+        </div>
+        <p id="sidebarProjectDescription"></p>
+        <h4>Features:</h4>
+        <ul id="sidebarProjectFeatures"></ul>
+        <h4>Technologies Used:</h4>
+        <ul id="sidebarProjectTech"></ul>
+        <a id="sidebarGithubLink" href="#" class="btn-small" target="_blank">View on GitHub</a>
+        <a id="sidebarFigmaLink" href="#" class="btn-small" target="_blank">View on Figma</a>
+    </div>
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
