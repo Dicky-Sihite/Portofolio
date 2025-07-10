@@ -169,6 +169,25 @@ const projectsData = {
     ],
     technologies: ["Figma", "MAZE"],
     FigmaLink: "https://www.figma.com/design/9DgQOpa70SpEqm1vf73yQZ/UI-UX-Design?node-id=0-1&t=KTebZfjzzoAoLnr2-1"
+  },
+
+  bangku: {
+    title: "Bangku Belakang",
+    images: [
+      "img/bangku.png",
+      "img/bangku2.png"
+    ],
+    description: "Bangku Belakang is a web-based application built with HTML, CSS, and JavaScript, designed to display real-time information about movies and TV series using integration with the TMDb (The Movie Database) API.",
+    features: [
+      "Integrated with API",
+      "Filter by Genre",
+      "Movie Category",
+      "Failed Movies",
+    ],
+    technologies: [
+      "HTML", "CSS", "JavaScript","TMDb API"
+    ],
+    githubLink: "https://github.com/Dicky-Sihite/Bangku-Belakang"
   }
 };
 
