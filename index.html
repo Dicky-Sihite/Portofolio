@@ -39,7 +39,7 @@
     <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-            Informatics Management student at Universitas Negeri Surabaya with a strong interest in mobile and web application development. Skilled in UI/UX design and passionate about problem-solving as a programmer. Always eager to learn new things and grow in the tech industry.
+            An active Informatics Management student at the State University of Surabaya with a focus on web development, database management, and UI/UX. Skilled in software development using Laravel, CodeIgniter, JavaScript, HTML, CSS, and PHP, as well as interface design using Figma and Canva. Able to work independently or collaboratively, with a strong ability to learn quickly. Currently aiming for a career as a Fullstack Developer with a long-term goal of becoming a Senior Software Engineer.
         </p>
     </section>
 
@@ -68,6 +68,12 @@
                 <button class="scroll-btn scroll-btn-left" onclick="scrollProjects(-1)">&#10094;</button>
                 <div class="projects-scroll" id="projectScroll">
                     <!-- Project Cards -->
+                    <div class="project-card" data-project-id="Katalog">
+                        <h3>Katalog Perpustakaan</h3>
+                        <img src="img/project-katalog.png" alt="Katalog Perpustakaan" class="project-img">
+                        <p>A digital platform designed to make it easier for the public to find, browse, and access the collection of books and archives available in the library.</p>
+                        <button class="btn-small view-details-btn">View Details</button>
+                    </div>
                     <div class="project-card" data-project-id="ari">
                         <h3>ARI</h3>
                         <img src="img/project-weather.png" alt="Weather App ARI" class="project-img">
@@ -133,11 +139,11 @@
     <section id="skills" class="skills-section"> 
         <h2 class="section-title">Hard Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card">Web Development: <span>HTML, CSS, JavaScript, Laravel (PHP)</span></div>
+            <div class="skill-card">Web Development: <span>HTML, CSS, JavaScript, Laravel, CodeIgniter </span></div>
             <div class="skill-card">Mobile Development: <span>Flutter & Dart</span></div>
-            <div class="skill-card">Database Management: <span>MySQL, Firebase Realtime Database</span></div>
+            <div class="skill-card">Database Management: <span>MySQL, PgAdmin</span></div>
             <div class="skill-card">RESTful API Integration</div>
-            <div class="skill-card">UI/UX Design: <span>Figma, Wireframing, Prototyping</span></div>
+            <div class="skill-card">UI/UX Design: <span>Figma, Wireframing, Canva</span></div>
             <div class="skill-card">Version Control: <span>Git & GitHub</span></div>
             <div class="skill-card">Testing & Debugging: <span>Postman, Flutter DevTools</span></div>
         </div>
@@ -198,30 +204,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-        <h2>Contact</h2>
-        <p class="contact-description">
-            Feel free to contact me by submitting the form below. I will get back to you as soon as possible.
-        </p>
-        <form
-            class="contact-form"
-            action="https://formspree.io/f/mzzgqoge"
-            method="POST"
-        >
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
-
-            <button type="submit" class="submit-btn">Send</button>
-        </form>
-        </section>
 
     <!-- Footer -->
     <footer>

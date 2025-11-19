@@ -31,6 +31,25 @@ sections.forEach(section => {
 
 // Project Data (Add your project details here)
 const projectsData = {
+  Katalog: {
+    title: "Katalog Perpustakaan",
+    images: [
+      "img/project-katalog.png", 
+      "img/katalog.png", 
+    ],
+    description: "The Surabaya City Library and Archives Service Catalog Website is a digital platform designed to make it easier for the public to find, browse, and access the book and archive collections available in the library. This system features a modern, informative, and responsive interface, allowing users to search the catalog quickly and efficiently. This website also features smart search, collection categories, detailed book information, and constantly updated library data integration. With the introduction of this digital catalog, the Surabaya City Library and Archives Service is committed to improving public information services and supporting community literacy thru technology that is more accessible and user-friendly.",
+    features: [
+      "Elegant & Responsive UI/UX",
+      "Catalog Search"
+    ],
+    technologies: [
+      "CodeIgniter 3",
+      "Bootstrapt",
+      "Figma",
+      "Postgre"
+    ],
+    githubLink: ""
+  },
   ari: {
     title: "Weather App ARI",
     images: [
