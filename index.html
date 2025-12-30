@@ -205,6 +205,22 @@
         </div>
     </section>
 
+    <h2 class="section-title">Quote of the Day</h2>
+    <div class="quote-box">
+    <p id="quote-text">Loading...</p>
+    <span id="quote-author"></span>
+    </div>
+
+    <script>
+    fetch("quotes.json")
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("quote-text").innerText = `"${data.quote}"`;
+        document.getElementById("quote-author").innerText = `— ${data.author}`;
+    });
+    </script>
+
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Dicky Sihite.</p>
