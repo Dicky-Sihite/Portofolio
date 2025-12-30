@@ -24,11 +24,9 @@ jobs:
         run: pip install requests
 
       - name: Fetch new quote
-        working-directory: Portofolio
         run: python update_quote.py
 
       - name: Commit & Push
-        working-directory: Portofolio
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
